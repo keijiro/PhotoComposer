@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F8FF4181373B725008BF9AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF4171373B725008BF9AE /* UIKit.framework */; };
+		0F8FF41A1373B725008BF9AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF4191373B725008BF9AE /* Foundation.framework */; };
+		0F8FF41C1373B725008BF9AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF41B1373B725008BF9AE /* CoreGraphics.framework */; };
+		0F8FF4221373B725008BF9AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF4201373B725008BF9AE /* InfoPlist.strings */; };
+		0F8FF4251373B725008BF9AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FF4241373B725008BF9AE /* main.m */; };
+		0F8FF4281373B725008BF9AE /* PhotoComposerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FF4271373B725008BF9AE /* PhotoComposerAppDelegate.m */; };
+		0F8FF42B1373B725008BF9AE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF4291373B725008BF9AE /* MainWindow.xib */; };
+		0F8FF42E1373B725008BF9AE /* PhotoComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */; };
+		0F8FF4311373B725008BF9AE /* PhotoComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F8FF4131373B725008BF9AE /* PhotoComposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoComposer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F8FF4171373B725008BF9AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F8FF4191373B725008BF9AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F8FF41B1373B725008BF9AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F8FF41F1373B725008BF9AE /* PhotoComposer-Info.plist */ = {isa = PBXFileReference; path = "PhotoComposer-Info.plist"; sourceTree = "<group>"; };
+		0F8FF4211373B725008BF9AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F8FF4231373B725008BF9AE /* PhotoComposer-Prefix.pch */ = {isa = PBXFileReference; path = "PhotoComposer-Prefix.pch"; sourceTree = "<group>"; };
+		0F8FF4241373B725008BF9AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F8FF4261373B725008BF9AE /* PhotoComposerAppDelegate.h */ = {isa = PBXFileReference; path = PhotoComposerAppDelegate.h; sourceTree = "<group>"; };
+		0F8FF4271373B725008BF9AE /* PhotoComposerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoComposerAppDelegate.m; sourceTree = "<group>"; };
+		0F8FF42A1373B725008BF9AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0F8FF42C1373B725008BF9AE /* PhotoComposerViewController.h */ = {isa = PBXFileReference; path = PhotoComposerViewController.h; sourceTree = "<group>"; };
+		0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoComposerViewController.m; sourceTree = "<group>"; };
+		0F8FF4301373B725008BF9AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PhotoComposerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F8FF4101373B725008BF9AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8FF4181373B725008BF9AE /* UIKit.framework in Frameworks */,
+				0F8FF41A1373B725008BF9AE /* Foundation.framework in Frameworks */,
+				0F8FF41C1373B725008BF9AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8FF4081373B725008BF9AE = {
+			isa = PBXGroup;
+			children = (
+				0F8FF41D1373B725008BF9AE /* PhotoComposer */,
+				0F8FF4161373B725008BF9AE /* Frameworks */,
+				0F8FF4141373B725008BF9AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F8FF4141373B725008BF9AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F8FF4131373B725008BF9AE /* PhotoComposer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F8FF4161373B725008BF9AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F8FF4171373B725008BF9AE /* UIKit.framework */,
+				0F8FF4191373B725008BF9AE /* Foundation.framework */,
+				0F8FF41B1373B725008BF9AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F8FF41D1373B725008BF9AE /* PhotoComposer */ = {
+			isa = PBXGroup;
+			children = (
+				0F8FF4261373B725008BF9AE /* PhotoComposerAppDelegate.h */,
+				0F8FF4271373B725008BF9AE /* PhotoComposerAppDelegate.m */,
+				0F8FF4291373B725008BF9AE /* MainWindow.xib */,
+				0F8FF42C1373B725008BF9AE /* PhotoComposerViewController.h */,
+				0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */,
+				0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */,
+				0F8FF41E1373B725008BF9AE /* Supporting Files */,
+			);
+			path = PhotoComposer;
+			sourceTree = "<group>";
+		};
+		0F8FF41E1373B725008BF9AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F8FF41F1373B725008BF9AE /* PhotoComposer-Info.plist */,
+				0F8FF4201373B725008BF9AE /* InfoPlist.strings */,
+				0F8FF4231373B725008BF9AE /* PhotoComposer-Prefix.pch */,
+				0F8FF4241373B725008BF9AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F8FF4121373B725008BF9AE /* PhotoComposer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F8FF4341373B725008BF9AE /* Build configuration list for PBXNativeTarget "PhotoComposer" */;
+			buildPhases = (
+				0F8FF40F1373B725008BF9AE /* Sources */,
+				0F8FF4101373B725008BF9AE /* Frameworks */,
+				0F8FF4111373B725008BF9AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoComposer;
+			productName = PhotoComposer;
+			productReference = 0F8FF4131373B725008BF9AE /* PhotoComposer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F8FF40A1373B725008BF9AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = none;
+			};
+			buildConfigurationList = 0F8FF40D1373B725008BF9AE /* Build configuration list for PBXProject "PhotoComposer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F8FF4081373B725008BF9AE;
+			productRefGroup = 0F8FF4141373B725008BF9AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F8FF4121373B725008BF9AE /* PhotoComposer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F8FF4111373B725008BF9AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8FF4221373B725008BF9AE /* InfoPlist.strings in Resources */,
+				0F8FF42B1373B725008BF9AE /* MainWindow.xib in Resources */,
+				0F8FF4311373B725008BF9AE /* PhotoComposerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F8FF40F1373B725008BF9AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8FF4251373B725008BF9AE /* main.m in Sources */,
+				0F8FF4281373B725008BF9AE /* PhotoComposerAppDelegate.m in Sources */,
+				0F8FF42E1373B725008BF9AE /* PhotoComposerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F8FF4201373B725008BF9AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8FF4211373B725008BF9AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F8FF4291373B725008BF9AE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8FF42A1373B725008BF9AE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F8FF4301373B725008BF9AE /* en */,
+			);
+			name = PhotoComposerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F8FF4321373B725008BF9AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F8FF4331373B725008BF9AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0F8FF4351373B725008BF9AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoComposer/PhotoComposer-Prefix.pch";
+				INFOPLIST_FILE = "PhotoComposer/PhotoComposer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F8FF4361373B725008BF9AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoComposer/PhotoComposer-Prefix.pch";
+				INFOPLIST_FILE = "PhotoComposer/PhotoComposer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F8FF40D1373B725008BF9AE /* Build configuration list for PBXProject "PhotoComposer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F8FF4321373B725008BF9AE /* Debug */,
+				0F8FF4331373B725008BF9AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F8FF4341373B725008BF9AE /* Build configuration list for PBXNativeTarget "PhotoComposer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F8FF4351373B725008BF9AE /* Debug */,
+				0F8FF4361373B725008BF9AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F8FF40A1373B725008BF9AE /* Project object */;
+}
