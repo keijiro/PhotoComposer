@@ -16,6 +16,10 @@
 		0F8FF42B1373B725008BF9AE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF4291373B725008BF9AE /* MainWindow.xib */; };
 		0F8FF42E1373B725008BF9AE /* PhotoComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */; };
 		0F8FF4311373B725008BF9AE /* PhotoComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */; };
+		0F8FF4471373D11A008BF9AE /* CameraOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */; };
+		0F8FF4481373D11A008BF9AE /* CameraOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */; };
+		0F8FF44C1373D50A008BF9AE /* Frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF44B1373D50A008BF9AE /* Frame.png */; };
+		0F8FF44E1373E519008BF9AE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,21 @@
 		0F8FF4171373B725008BF9AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F8FF4191373B725008BF9AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F8FF41B1373B725008BF9AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0F8FF41F1373B725008BF9AE /* PhotoComposer-Info.plist */ = {isa = PBXFileReference; path = "PhotoComposer-Info.plist"; sourceTree = "<group>"; };
+		0F8FF41F1373B725008BF9AE /* PhotoComposer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoComposer-Info.plist"; sourceTree = "<group>"; };
 		0F8FF4211373B725008BF9AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F8FF4231373B725008BF9AE /* PhotoComposer-Prefix.pch */ = {isa = PBXFileReference; path = "PhotoComposer-Prefix.pch"; sourceTree = "<group>"; };
+		0F8FF4231373B725008BF9AE /* PhotoComposer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoComposer-Prefix.pch"; sourceTree = "<group>"; };
 		0F8FF4241373B725008BF9AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0F8FF4261373B725008BF9AE /* PhotoComposerAppDelegate.h */ = {isa = PBXFileReference; path = PhotoComposerAppDelegate.h; sourceTree = "<group>"; };
+		0F8FF4261373B725008BF9AE /* PhotoComposerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoComposerAppDelegate.h; sourceTree = "<group>"; };
 		0F8FF4271373B725008BF9AE /* PhotoComposerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoComposerAppDelegate.m; sourceTree = "<group>"; };
 		0F8FF42A1373B725008BF9AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		0F8FF42C1373B725008BF9AE /* PhotoComposerViewController.h */ = {isa = PBXFileReference; path = PhotoComposerViewController.h; sourceTree = "<group>"; };
+		0F8FF42C1373B725008BF9AE /* PhotoComposerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoComposerViewController.h; sourceTree = "<group>"; };
 		0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoComposerViewController.m; sourceTree = "<group>"; };
 		0F8FF4301373B725008BF9AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PhotoComposerViewController.xib; sourceTree = "<group>"; };
+		0F8FF4441373D11A008BF9AE /* CameraOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraOverlayViewController.h; sourceTree = "<group>"; };
+		0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraOverlayViewController.m; sourceTree = "<group>"; };
+		0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraOverlayViewController.xib; sourceTree = "<group>"; };
+		0F8FF44B1373D50A008BF9AE /* Frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame.png; sourceTree = "<group>"; };
+		0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8FF44E1373E519008BF9AE /* AssetsLibrary.framework in Frameworks */,
 				0F8FF4181373B725008BF9AE /* UIKit.framework in Frameworks */,
 				0F8FF41A1373B725008BF9AE /* Foundation.framework in Frameworks */,
 				0F8FF41C1373B725008BF9AE /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +62,7 @@
 		0F8FF4081373B725008BF9AE = {
 			isa = PBXGroup;
 			children = (
+				0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */,
 				0F8FF41D1373B725008BF9AE /* PhotoComposer */,
 				0F8FF4161373B725008BF9AE /* Frameworks */,
 				0F8FF4141373B725008BF9AE /* Products */,
@@ -79,6 +90,7 @@
 		0F8FF41D1373B725008BF9AE /* PhotoComposer */ = {
 			isa = PBXGroup;
 			children = (
+				0F8FF44B1373D50A008BF9AE /* Frame.png */,
 				0F8FF4261373B725008BF9AE /* PhotoComposerAppDelegate.h */,
 				0F8FF4271373B725008BF9AE /* PhotoComposerAppDelegate.m */,
 				0F8FF4291373B725008BF9AE /* MainWindow.xib */,
@@ -86,6 +98,9 @@
 				0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */,
 				0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */,
 				0F8FF41E1373B725008BF9AE /* Supporting Files */,
+				0F8FF4441373D11A008BF9AE /* CameraOverlayViewController.h */,
+				0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */,
+				0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */,
 			);
 			path = PhotoComposer;
 			sourceTree = "<group>";
@@ -154,6 +169,8 @@
 				0F8FF4221373B725008BF9AE /* InfoPlist.strings in Resources */,
 				0F8FF42B1373B725008BF9AE /* MainWindow.xib in Resources */,
 				0F8FF4311373B725008BF9AE /* PhotoComposerViewController.xib in Resources */,
+				0F8FF4481373D11A008BF9AE /* CameraOverlayViewController.xib in Resources */,
+				0F8FF44C1373D50A008BF9AE /* Frame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +184,7 @@
 				0F8FF4251373B725008BF9AE /* main.m in Sources */,
 				0F8FF4281373B725008BF9AE /* PhotoComposerAppDelegate.m in Sources */,
 				0F8FF42E1373B725008BF9AE /* PhotoComposerViewController.m in Sources */,
+				0F8FF4471373D11A008BF9AE /* CameraOverlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +222,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keijiro Takahashi (TTU92888H4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -213,6 +232,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "BB8B4FC9-2702-4553-A774-12C82BE6E7E2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -221,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keijiro Takahashi (TTU92888H4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -228,6 +249,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "BB8B4FC9-2702-4553-A774-12C82BE6E7E2";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

@@ -1,15 +1,18 @@
-//
-//  PhotoComposerViewController.h
-//  PhotoComposer
-//
-//  Created by 高橋 啓治郎 on 11/05/06.
-//  Copyright 2011 none. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "CameraOverlayViewController.h"
 
-@interface PhotoComposerViewController : UIViewController {
-    
+@interface PhotoComposerViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
 }
+
+@property (nonatomic, retain) IBOutlet UIView *compositeBaseView;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+
+@property (nonatomic, retain) CameraOverlayViewController *compositeOverlayViewController;
+@property (nonatomic, retain) CameraOverlayViewController *cameraOverlayViewController;
+
+@property (nonatomic, retain) UIImagePickerController *imagePickerController;
+
+- (IBAction)activateCamera;
+- (IBAction)savePhoto;
 
 @end
