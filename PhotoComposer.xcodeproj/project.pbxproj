@@ -18,7 +18,6 @@
 		0F81449D1374E3D5000144F2 /* Frame9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144931374E3D5000144F2 /* Frame9.png */; };
 		0F81449E1374E3D5000144F2 /* Frame10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144941374E3D5000144F2 /* Frame10.png */; };
 		0F8144AA1374E7D4000144F2 /* FrameSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8144A81374E7D4000144F2 /* FrameSelectorViewController.m */; };
-		0F8144AB1374E7D4000144F2 /* FrameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144A91374E7D4000144F2 /* FrameSelectorViewController.xib */; };
 		0F8FF4181373B725008BF9AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF4171373B725008BF9AE /* UIKit.framework */; };
 		0F8FF41A1373B725008BF9AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF4191373B725008BF9AE /* Foundation.framework */; };
 		0F8FF41C1373B725008BF9AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF41B1373B725008BF9AE /* CoreGraphics.framework */; };
@@ -34,7 +33,9 @@
 		0F918FE5137516F4006CE7B9 /* Frame12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F918FE4137516F4006CE7B9 /* Frame12.png */; };
 		0F918FE813751C7E006CE7B9 /* Frame11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F918FE713751C7E006CE7B9 /* Frame11.png */; };
 		0F91902913756DCF006CE7B9 /* CommentInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91902713756DCE006CE7B9 /* CommentInputViewController.m */; };
-		0F91902A13756DCF006CE7B9 /* CommentInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F91902813756DCE006CE7B9 /* CommentInputViewController.xib */; };
+		0F91902F137581B6006CE7B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F919031137581B6006CE7B9 /* Localizable.strings */; };
+		0F91903313758314006CE7B9 /* FrameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F91903513758315006CE7B9 /* FrameSelectorViewController.xib */; };
+		0F91903713758351006CE7B9 /* CommentInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F91903913758351006CE7B9 /* CommentInputViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +51,6 @@
 		0F8144941374E3D5000144F2 /* Frame10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame10.png; sourceTree = "<group>"; };
 		0F8144A71374E7D4000144F2 /* FrameSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameSelectorViewController.h; sourceTree = "<group>"; };
 		0F8144A81374E7D4000144F2 /* FrameSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameSelectorViewController.m; sourceTree = "<group>"; };
-		0F8144A91374E7D4000144F2 /* FrameSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrameSelectorViewController.xib; sourceTree = "<group>"; };
 		0F8FF4131373B725008BF9AE /* PhotoComposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoComposer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8FF4171373B725008BF9AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F8FF4191373B725008BF9AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,7 +73,14 @@
 		0F918FE713751C7E006CE7B9 /* Frame11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame11.png; sourceTree = "<group>"; };
 		0F91902613756DCE006CE7B9 /* CommentInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInputViewController.h; sourceTree = "<group>"; };
 		0F91902713756DCE006CE7B9 /* CommentInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInputViewController.m; sourceTree = "<group>"; };
-		0F91902813756DCE006CE7B9 /* CommentInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentInputViewController.xib; sourceTree = "<group>"; };
+		0F91902B13757E7C006CE7B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/PhotoComposerViewController.xib; sourceTree = "<group>"; };
+		0F91902C13758016006CE7B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0F919030137581B6006CE7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0F919032137581C4006CE7B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0F91903413758315006CE7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FrameSelectorViewController.xib; sourceTree = "<group>"; };
+		0F9190361375831D006CE7B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/FrameSelectorViewController.xib; sourceTree = "<group>"; };
+		0F91903813758351006CE7B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CommentInputViewController.xib; sourceTree = "<group>"; };
+		0F91903A13758357006CE7B9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/CommentInputViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +157,15 @@
 				0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */,
 				0F8144A71374E7D4000144F2 /* FrameSelectorViewController.h */,
 				0F8144A81374E7D4000144F2 /* FrameSelectorViewController.m */,
-				0F8144A91374E7D4000144F2 /* FrameSelectorViewController.xib */,
+				0F91903513758315006CE7B9 /* FrameSelectorViewController.xib */,
 				0F8FF41E1373B725008BF9AE /* Supporting Files */,
 				0F8FF4441373D11A008BF9AE /* CameraOverlayViewController.h */,
 				0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */,
 				0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */,
 				0F91902613756DCE006CE7B9 /* CommentInputViewController.h */,
 				0F91902713756DCE006CE7B9 /* CommentInputViewController.m */,
-				0F91902813756DCE006CE7B9 /* CommentInputViewController.xib */,
+				0F91903913758351006CE7B9 /* CommentInputViewController.xib */,
+				0F919031137581B6006CE7B9 /* Localizable.strings */,
 			);
 			path = PhotoComposer;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 0F8FF4081373B725008BF9AE;
 			productRefGroup = 0F8FF4141373B725008BF9AE /* Products */;
@@ -237,10 +246,11 @@
 				0F81449C1374E3D5000144F2 /* Frame8.png in Resources */,
 				0F81449D1374E3D5000144F2 /* Frame9.png in Resources */,
 				0F81449E1374E3D5000144F2 /* Frame10.png in Resources */,
-				0F8144AB1374E7D4000144F2 /* FrameSelectorViewController.xib in Resources */,
+				0F91903313758314006CE7B9 /* FrameSelectorViewController.xib in Resources */,
 				0F918FE5137516F4006CE7B9 /* Frame12.png in Resources */,
 				0F918FE813751C7E006CE7B9 /* Frame11.png in Resources */,
-				0F91902A13756DCF006CE7B9 /* CommentInputViewController.xib in Resources */,
+				0F91903713758351006CE7B9 /* CommentInputViewController.xib in Resources */,
+				0F91902F137581B6006CE7B9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +285,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F8FF42A1373B725008BF9AE /* en */,
+				0F91902C13758016006CE7B9 /* ja */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
@@ -283,8 +294,36 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F8FF4301373B725008BF9AE /* en */,
+				0F91902B13757E7C006CE7B9 /* ja */,
 			);
 			name = PhotoComposerViewController.xib;
+			sourceTree = "<group>";
+		};
+		0F919031137581B6006CE7B9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F919030137581B6006CE7B9 /* en */,
+				0F919032137581C4006CE7B9 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0F91903513758315006CE7B9 /* FrameSelectorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F91903413758315006CE7B9 /* en */,
+				0F9190361375831D006CE7B9 /* ja */,
+			);
+			name = FrameSelectorViewController.xib;
+			sourceTree = "<group>";
+		};
+		0F91903913758351006CE7B9 /* CommentInputViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F91903813758351006CE7B9 /* en */,
+				0F91903A13758357006CE7B9 /* ja */,
+			);
+			name = CommentInputViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

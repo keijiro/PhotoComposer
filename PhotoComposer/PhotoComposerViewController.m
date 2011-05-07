@@ -80,7 +80,7 @@
         self.compositeOverlayViewController.commentLabel.text = comment;
         self.cameraOverlayViewController.commentLabel.text = comment;
     } else {
-        [self.commentButton setTitle:@"(Edit Comment)" forState:UIControlStateNormal];
+        [self.commentButton setTitle:NSLocalizedString(@"(Edit Comment)", @"") forState:UIControlStateNormal];
         self.compositeOverlayViewController.commentLabel.text = nil;
         self.cameraOverlayViewController.commentLabel.text = nil;
     }
@@ -103,12 +103,12 @@
 {
     dateEnabled = !dateEnabled;
     if (dateEnabled) {
-        [self.dateButton setTitle:@"Date On" forState:UIControlStateNormal];
+        [self.dateButton setTitle:NSLocalizedString(@"Date On", @"") forState:UIControlStateNormal];
         NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
         self.compositeOverlayViewController.dateLabel.text = dateString;
         self.cameraOverlayViewController.dateLabel.text = dateString;
     } else {
-        [self.dateButton setTitle:@"Date Off" forState:UIControlStateNormal];
+        [self.dateButton setTitle:NSLocalizedString(@"Date Off", @"") forState:UIControlStateNormal];
         self.compositeOverlayViewController.dateLabel.text = nil;
         self.cameraOverlayViewController.dateLabel.text = nil;
     }
