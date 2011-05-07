@@ -6,6 +6,8 @@
 
 @synthesize compositeBaseView = _compositeBaseView;
 @synthesize imageView = _imageView;
+@synthesize indicatorView = _indicatorView;
+@synthesize toolBar = _toolBar;
 
 @synthesize compositeOverlayViewController = _compositeOverlayViewController;
 @synthesize cameraOverlayViewController = _cameraOverlayViewController;
@@ -41,7 +43,7 @@
     self.cameraOverlayViewController = [[CameraOverlayViewController alloc] init];
     
     [self.compositeBaseView addSubview:self.compositeOverlayViewController.view];
-    [self.imagePickerController.cameraOverlayView addSubview:self.cameraOverlayViewController.view];
+    self.imagePickerController.cameraOverlayView = self.cameraOverlayViewController.view;
 
     [super viewDidLoad];
 }
@@ -61,6 +63,11 @@
 
 #pragma mark - Camera Actions
 
+- (IBAction)selectFrame
+{
+    NSLog(@"Select Frame");
+}
+
 - (IBAction)activateCamera
 {
     [self presentModalViewController:self.imagePickerController animated:TRUE];
@@ -68,17 +75,37 @@
 
 - (IBAction)savePhoto
 {
-    UIGraphicsBeginImageContextWithOptions(self.compositeBaseView.bounds.size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    [self.compositeBaseView.layer renderInContext:context];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+    // UIを一時的に封印。
+    self.indicatorView.hidden = NO;
+    for (id object in self.toolBar.items) {
+        [object setEnabled:NO];
+    }
     
-    ALAssetsLibrary *library = [[[ALAssetsLibrary alloc] init] autorelease];
-    [library writeImageToSavedPhotosAlbum:image.CGImage orientation:ALAssetOrientationUp completionBlock:^(NSURL *assetURL, NSError *error) {
-        NSLog(@"Written: %@, %@", assetURL, error);
-        [image autorelease];
-     }];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // 合成ビューのイメージを取得する。
+        UIGraphicsBeginImageContextWithOptions(self.compositeBaseView.bounds.size, NO, 0);
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        [self.compositeBaseView.layer renderInContext:context];
+        UIImage *image = [UIGraphicsGetImageFromCurrentImageContext() retain];
+        UIGraphicsEndImageContext();
+
+        // カメラロールに保存。
+        ALAssetsLibrary *library = [[[ALAssetsLibrary alloc] init] autorelease];
+        [library writeImageToSavedPhotosAlbum:image.CGImage orientation:ALAssetOrientationUp completionBlock:^(NSURL *assetURL, NSError *error) {
+            if (error) {
+                NSLog(@"ALAssetLibrary error - %@", error);
+            } else {
+                NSLog(@"Image saved: %@", assetURL);
+            }
+            [image release];
+
+            // UIの封印を解除。
+            self.indicatorView.hidden = YES;
+            for (id object in self.toolBar.items) {
+                [object setEnabled:YES];
+            }
+        }];
+    });
 }
 
 #pragma mark - UIImagePickerControllerDelegate
