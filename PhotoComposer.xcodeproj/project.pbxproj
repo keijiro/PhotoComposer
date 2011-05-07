@@ -33,6 +33,8 @@
 		0F8FF44E1373E519008BF9AE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */; };
 		0F918FE5137516F4006CE7B9 /* Frame12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F918FE4137516F4006CE7B9 /* Frame12.png */; };
 		0F918FE813751C7E006CE7B9 /* Frame11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F918FE713751C7E006CE7B9 /* Frame11.png */; };
+		0F91902913756DCF006CE7B9 /* CommentInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F91902713756DCE006CE7B9 /* CommentInputViewController.m */; };
+		0F91902A13756DCF006CE7B9 /* CommentInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F91902813756DCE006CE7B9 /* CommentInputViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,9 @@
 		0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		0F918FE4137516F4006CE7B9 /* Frame12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame12.png; sourceTree = "<group>"; };
 		0F918FE713751C7E006CE7B9 /* Frame11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame11.png; sourceTree = "<group>"; };
+		0F91902613756DCE006CE7B9 /* CommentInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInputViewController.h; sourceTree = "<group>"; };
+		0F91902713756DCE006CE7B9 /* CommentInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInputViewController.m; sourceTree = "<group>"; };
+		0F91902813756DCE006CE7B9 /* CommentInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentInputViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +155,9 @@
 				0F8FF4441373D11A008BF9AE /* CameraOverlayViewController.h */,
 				0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */,
 				0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */,
+				0F91902613756DCE006CE7B9 /* CommentInputViewController.h */,
+				0F91902713756DCE006CE7B9 /* CommentInputViewController.m */,
+				0F91902813756DCE006CE7B9 /* CommentInputViewController.xib */,
 			);
 			path = PhotoComposer;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				0F8144AB1374E7D4000144F2 /* FrameSelectorViewController.xib in Resources */,
 				0F918FE5137516F4006CE7B9 /* Frame12.png in Resources */,
 				0F918FE813751C7E006CE7B9 /* Frame11.png in Resources */,
+				0F91902A13756DCF006CE7B9 /* CommentInputViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +256,7 @@
 				0F8FF42E1373B725008BF9AE /* PhotoComposerViewController.m in Sources */,
 				0F8FF4471373D11A008BF9AE /* CameraOverlayViewController.m in Sources */,
 				0F8144AA1374E7D4000144F2 /* FrameSelectorViewController.m in Sources */,
+				0F91902913756DCF006CE7B9 /* CommentInputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

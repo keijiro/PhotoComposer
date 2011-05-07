@@ -7,5 +7,6 @@
 
 - (IBAction)selectFrame:(id)sender;
 - (IBAction)cancel;
+- (IBAction)showOptions;
 
 @end

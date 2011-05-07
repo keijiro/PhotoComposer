@@ -1,17 +1,15 @@
-#import "CameraOverlayViewController.h"
+#import "CommentInputViewController.h"
 
 
-@implementation CameraOverlayViewController
+@implementation CommentInputViewController
 
-@synthesize frameImageView = _frameImageView;
-@synthesize commentLabel = _commentLabel;
-@synthesize dateLabel = _dateLabel;
+@synthesize textField = _textField;
+@synthesize commentText = _commentText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.view.backgroundColor = [UIColor clearColor];
         // Custom initialization
     }
     return self;
@@ -49,6 +47,25 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.textField.text = self.commentText;
+    [self.textField becomeFirstResponder];
+}
+
+#pragma mark - Done and Cancel
+
+- (IBAction)done
+{
+    self.commentText = self.textField.text;
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)cancel
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

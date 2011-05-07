@@ -9,7 +9,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -60,6 +59,10 @@
 - (IBAction)cancel
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)showOptions
+{
 }
 
 @end

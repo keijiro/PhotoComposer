@@ -4,6 +4,8 @@
 
 @implementation PhotoComposerViewController
 
+@synthesize dateButton = _dateButton;
+@synthesize commentButton = _commentButton;
 @synthesize compositeBaseView = _compositeBaseView;
 @synthesize imageView = _imageView;
 @synthesize indicatorView = _indicatorView;
@@ -14,6 +16,7 @@
 
 @synthesize frameSelectorController = _frameSelectorController;
 @synthesize imagePickerController = _imagePickerController;
+@synthesize commentInputViewController = _commentInputViewController;
 
 - (void)dealloc
 {
@@ -44,10 +47,14 @@
 
     self.frameSelectorController = [[FrameSelectorViewController alloc] init];
     
+    self.compositeOverlayViewController.dateLabel.hidden = YES;
+    self.compositeOverlayViewController.commentLabel.hidden = YES;
     [self.compositeBaseView addSubview:self.compositeOverlayViewController.view];
 
     self.cameraOverlayViewController.view.alpha = 0.5;
     self.imagePickerController.cameraOverlayView = self.cameraOverlayViewController.view;
+    
+    self.commentInputViewController = [[CommentInputViewController alloc] init];
     
     [super viewDidLoad];
 }
@@ -66,6 +73,17 @@
         self.compositeOverlayViewController.frameImageView.image = selectedImage;
         self.cameraOverlayViewController.frameImageView.image = selectedImage;
     }
+    
+    if (self.commentInputViewController.commentText.length) {
+        NSString *comment = self.commentInputViewController.commentText;
+        [self.commentButton setTitle:comment forState:UIControlStateNormal];
+        self.compositeOverlayViewController.commentLabel.text = comment;
+        self.cameraOverlayViewController.commentLabel.text = comment;
+    } else {
+        [self.commentButton setTitle:@"(Edit Comment)" forState:UIControlStateNormal];
+        self.compositeOverlayViewController.commentLabel.text = nil;
+        self.cameraOverlayViewController.commentLabel.text = nil;
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -75,6 +93,26 @@
 }
 
 #pragma mark - Camera Actions
+
+- (IBAction)editComment
+{
+    [self presentModalViewController:self.commentInputViewController animated:YES];
+}
+
+- (IBAction)switchDate
+{
+    dateEnabled = !dateEnabled;
+    if (dateEnabled) {
+        [self.dateButton setTitle:@"Date On" forState:UIControlStateNormal];
+        NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterNoStyle];
+        self.compositeOverlayViewController.dateLabel.text = dateString;
+        self.cameraOverlayViewController.dateLabel.text = dateString;
+    } else {
+        [self.dateButton setTitle:@"Date Off" forState:UIControlStateNormal];
+        self.compositeOverlayViewController.dateLabel.text = nil;
+        self.cameraOverlayViewController.dateLabel.text = nil;
+    }
+}
 
 - (IBAction)selectFrame
 {
@@ -96,12 +134,18 @@
     }
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        self.compositeOverlayViewController.dateLabel.hidden = NO;
+        self.compositeOverlayViewController.commentLabel.hidden = NO;
+
         // 合成ビューのイメージを取得する。
         UIGraphicsBeginImageContextWithOptions(self.compositeBaseView.bounds.size, NO, 0);
         CGContextRef context = UIGraphicsGetCurrentContext();
         [self.compositeBaseView.layer renderInContext:context];
         UIImage *image = [UIGraphicsGetImageFromCurrentImageContext() retain];
         UIGraphicsEndImageContext();
+
+        self.compositeOverlayViewController.dateLabel.hidden = YES;
+        self.compositeOverlayViewController.commentLabel.hidden = YES;
 
         // カメラロールに保存。
         ALAssetsLibrary *library = [[[ALAssetsLibrary alloc] init] autorelease];
