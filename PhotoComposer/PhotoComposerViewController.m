@@ -12,6 +12,7 @@
 @synthesize compositeOverlayViewController = _compositeOverlayViewController;
 @synthesize cameraOverlayViewController = _cameraOverlayViewController;
 
+@synthesize frameSelectorController = _frameSelectorController;
 @synthesize imagePickerController = _imagePickerController;
 
 - (void)dealloc
@@ -37,14 +38,17 @@
     self.imagePickerController = [[[UIImagePickerController alloc] init] autorelease];
     self.imagePickerController.delegate = self;
     self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    self.imagePickerController.showsCameraControls = YES;
     
     self.compositeOverlayViewController = [[CameraOverlayViewController alloc] init];
     self.cameraOverlayViewController = [[CameraOverlayViewController alloc] init];
+
+    self.frameSelectorController = [[FrameSelectorViewController alloc] init];
     
     [self.compositeBaseView addSubview:self.compositeOverlayViewController.view];
-    self.imagePickerController.cameraOverlayView = self.cameraOverlayViewController.view;
 
+    self.cameraOverlayViewController.view.alpha = 0.5;
+    self.imagePickerController.cameraOverlayView = self.cameraOverlayViewController.view;
+    
     [super viewDidLoad];
 }
 
@@ -53,6 +57,15 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    UIImage *selectedImage = self.frameSelectorController.selectedImage;
+    if (selectedImage) {
+        self.compositeOverlayViewController.frameImageView.image = selectedImage;
+        self.cameraOverlayViewController.frameImageView.image = selectedImage;
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -65,12 +78,13 @@
 
 - (IBAction)selectFrame
 {
-    NSLog(@"Select Frame");
+    [self presentModalViewController:self.frameSelectorController animated:YES];
 }
 
 - (IBAction)activateCamera
 {
-    [self presentModalViewController:self.imagePickerController animated:TRUE];
+    self.imagePickerController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentModalViewController:self.imagePickerController animated:YES];
 }
 
 - (IBAction)savePhoto

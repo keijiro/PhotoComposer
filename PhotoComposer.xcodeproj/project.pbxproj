@@ -17,6 +17,8 @@
 		0F81449C1374E3D5000144F2 /* Frame8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144921374E3D5000144F2 /* Frame8.png */; };
 		0F81449D1374E3D5000144F2 /* Frame9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144931374E3D5000144F2 /* Frame9.png */; };
 		0F81449E1374E3D5000144F2 /* Frame10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144941374E3D5000144F2 /* Frame10.png */; };
+		0F8144AA1374E7D4000144F2 /* FrameSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8144A81374E7D4000144F2 /* FrameSelectorViewController.m */; };
+		0F8144AB1374E7D4000144F2 /* FrameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8144A91374E7D4000144F2 /* FrameSelectorViewController.xib */; };
 		0F8FF4181373B725008BF9AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF4171373B725008BF9AE /* UIKit.framework */; };
 		0F8FF41A1373B725008BF9AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF4191373B725008BF9AE /* Foundation.framework */; };
 		0F8FF41C1373B725008BF9AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF41B1373B725008BF9AE /* CoreGraphics.framework */; };
@@ -29,6 +31,8 @@
 		0F8FF4471373D11A008BF9AE /* CameraOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */; };
 		0F8FF4481373D11A008BF9AE /* CameraOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */; };
 		0F8FF44E1373E519008BF9AE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */; };
+		0F918FE5137516F4006CE7B9 /* Frame12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F918FE4137516F4006CE7B9 /* Frame12.png */; };
+		0F918FE813751C7E006CE7B9 /* Frame11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F918FE713751C7E006CE7B9 /* Frame11.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,9 @@
 		0F8144921374E3D5000144F2 /* Frame8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame8.png; sourceTree = "<group>"; };
 		0F8144931374E3D5000144F2 /* Frame9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame9.png; sourceTree = "<group>"; };
 		0F8144941374E3D5000144F2 /* Frame10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame10.png; sourceTree = "<group>"; };
+		0F8144A71374E7D4000144F2 /* FrameSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameSelectorViewController.h; sourceTree = "<group>"; };
+		0F8144A81374E7D4000144F2 /* FrameSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameSelectorViewController.m; sourceTree = "<group>"; };
+		0F8144A91374E7D4000144F2 /* FrameSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrameSelectorViewController.xib; sourceTree = "<group>"; };
 		0F8FF4131373B725008BF9AE /* PhotoComposer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoComposer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8FF4171373B725008BF9AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F8FF4191373B725008BF9AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +67,8 @@
 		0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraOverlayViewController.m; sourceTree = "<group>"; };
 		0F8FF4461373D11A008BF9AE /* CameraOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraOverlayViewController.xib; sourceTree = "<group>"; };
 		0F8FF44D1373E519008BF9AE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0F918FE4137516F4006CE7B9 /* Frame12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame12.png; sourceTree = "<group>"; };
+		0F918FE713751C7E006CE7B9 /* Frame11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame11.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,8 @@
 				0F8144921374E3D5000144F2 /* Frame8.png */,
 				0F8144931374E3D5000144F2 /* Frame9.png */,
 				0F8144941374E3D5000144F2 /* Frame10.png */,
+				0F918FE713751C7E006CE7B9 /* Frame11.png */,
+				0F918FE4137516F4006CE7B9 /* Frame12.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -132,6 +143,9 @@
 				0F8FF42C1373B725008BF9AE /* PhotoComposerViewController.h */,
 				0F8FF42D1373B725008BF9AE /* PhotoComposerViewController.m */,
 				0F8FF42F1373B725008BF9AE /* PhotoComposerViewController.xib */,
+				0F8144A71374E7D4000144F2 /* FrameSelectorViewController.h */,
+				0F8144A81374E7D4000144F2 /* FrameSelectorViewController.m */,
+				0F8144A91374E7D4000144F2 /* FrameSelectorViewController.xib */,
 				0F8FF41E1373B725008BF9AE /* Supporting Files */,
 				0F8FF4441373D11A008BF9AE /* CameraOverlayViewController.h */,
 				0F8FF4451373D11A008BF9AE /* CameraOverlayViewController.m */,
@@ -215,6 +229,9 @@
 				0F81449C1374E3D5000144F2 /* Frame8.png in Resources */,
 				0F81449D1374E3D5000144F2 /* Frame9.png in Resources */,
 				0F81449E1374E3D5000144F2 /* Frame10.png in Resources */,
+				0F8144AB1374E7D4000144F2 /* FrameSelectorViewController.xib in Resources */,
+				0F918FE5137516F4006CE7B9 /* Frame12.png in Resources */,
+				0F918FE813751C7E006CE7B9 /* Frame11.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +246,7 @@
 				0F8FF4281373B725008BF9AE /* PhotoComposerAppDelegate.m in Sources */,
 				0F8FF42E1373B725008BF9AE /* PhotoComposerViewController.m in Sources */,
 				0F8FF4471373D11A008BF9AE /* CameraOverlayViewController.m in Sources */,
+				0F8144AA1374E7D4000144F2 /* FrameSelectorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

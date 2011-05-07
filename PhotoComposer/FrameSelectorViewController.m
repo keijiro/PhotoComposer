@@ -1,15 +1,14 @@
-#import "CameraOverlayViewController.h"
+#import "FrameSelectorViewController.h"
 
 
-@implementation CameraOverlayViewController
+@implementation FrameSelectorViewController
 
-@synthesize frameImageView = _frameImageView;
+@synthesize selectedImage = _selectedImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.view.backgroundColor = [UIColor clearColor];
         // Custom initialization
     }
     return self;
@@ -17,6 +16,7 @@
 
 - (void)dealloc
 {
+    self.selectedImage = nil;
     [super dealloc];
 }
 
@@ -47,6 +47,19 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - Selector Actions
+
+- (IBAction)selectFrame:(id)sender
+{
+    self.selectedImage = [sender imageForState:UIControlStateNormal];
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)cancel
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
